@@ -1,0 +1,21 @@
+.hover-animation{
+    border: 0.5px solid #000;
+    transition: box-shadow .3s,transform .3s;
+}
+.hover-animation-WBorder{
+    transition: box-shadow .3s,transform .3s;
+}
+.hover-animation:hover {
+    box-shadow: 0 0 20px rgba(31, 30, 30, 0.2);
+    transform: scale(1.1);
+}
+.hover-animation-WBorder:hover {
+    box-shadow: 0 0 20px rgba(31, 30, 30, 0.2);
+    transform: scale(1.1);
+}
+.hover-zoom{
+    transition: transform .6s;
+}
+.hover-zoom:hover {
+    transform: scale(1.1);
+}

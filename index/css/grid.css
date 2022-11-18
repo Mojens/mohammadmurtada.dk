@@ -3,14 +3,6 @@
     background-color: #FEFBEA;
     padding: 40px 40px;
 }
-.hover-animation{
-    border: 0.5px solid #000;
-    transition: box-shadow .3s,transform .3s;
-}
-.hover-animation:hover {
-    box-shadow: 0 0 20px rgba(31, 30, 30, 0.2);
-    transform: scale(1.1);
-}
 
 @media (min-width: 1200px) {
     .swiper-wrapper {

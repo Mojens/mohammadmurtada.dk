@@ -36,6 +36,7 @@ html, body {
 }
 
 .container-body {
+    margin-top: -5%;
     padding: 10px 10px 60px;
 }
 
@@ -62,3 +63,89 @@ html, body {
     float:right;
     margin-left: 5%;
 }
+.bold-date{
+    font-size: small;
+}
+.p-header1{
+    font-size: large;
+    font-weight: bold;
+}
+.github-date{
+    float: right;
+    margin-top: -40px;
+    margin-right: -30px;
+}
+/* Arrow */
+body {
+    background: gray;
+}
+.button-up,
+.button-down {
+    position: relative;
+    padding: 5px;
+    margin: 30px auto;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.button-down:hover {
+    transform: translate3d(0, 10px, 0);
+}
+
+.button-up:hover {
+    transform: translate3d(0, -10px, 0);
+}
+
+.button-up::after,
+.button-down::after {
+    content: "";
+    position: absolute;
+    left: 17px;
+    z-index: 11;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.button-up::after {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.button-down::after {
+    top: 10px;
+    transform: rotate(225deg);
+}
+
+
+.long-arrow-right{
+    display: block;
+    margin: 10px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.long-arrow-right{
+    transform: rotate(135deg);
+}
+.long-arrow-right::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color: black;
+    transform: rotate(-45deg) translate(15px, 4px);
+    left: 0;
+    top: 0;
+}
+/* Arrow */
+.portfolio-link{
+    float: left;
+}
+
