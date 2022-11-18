@@ -6,8 +6,10 @@ function formatGitDate(date){
     return dateWOTSplitted[2] + '-' + dateWOTSplitted[1] + '-' + dateWOTSplitted[0];
 }
 
+let tokenInput = document.getElementById('api-token-input');
+
 const octokit = new Octokit({
-    auth: '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'
+    auth: tokenInput.value
 })
 
 async function showGitHubDate(repoName, elementId) {
