@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammad Murtada Portefølje</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../index2/css/main.css" rel="stylesheet">
+</head>
+<body>
+<!- Translate Pop Up -->
+<div class="bg-overlay" id="popup-option">
+  <div class="subscribe-optin">
+    <h1 class="lead text-center" id="popup-header-one">Skift Sprog</h1>
+    <form
+            id="popup-form">
+      <div class="lead text-center" id="google_translate_element"></div>
+    </form>
+    <a href="#" class="optin-close">&times;</a>
+  </div>
+</div>
+<a href="#popup-option"><button id="translateBtn"></button></a>
+<!- Translate Pop Up -->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mohammad Murtada</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="nav-about"><a href="#about">Om Mig</a></li>
+        <li id="nav-portfolio"><a href="#portfolio">Portefølje</a></li>
+        <li id="nav-contact"><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!-- Begin page content -->
+<div class="container-fluid">
+
+  <div class="row cover top">
+    <div class="col-xs-12">
+
+      <div class="row">
+        <div class="col-xs-12 headline">
+          <h1 class="text-center">Hej, Jeg er Mohammad</h1>
+          <p class="lead text-center">Datamatiker Studerende</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 center-block text-center">
+          <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about" class="row cover">
+    <h2 class="text-center">Om Mig</h2>
+    <div class="row">
+      <div class="col-md-6 text-center about-info">
+        <img class="img-circle text-center profile-img" src="https://media-exp1.licdn.com/dms/image/C4D03AQEdpFTG4Kmtlg/profile-displayphoto-shrink_400_400/0/1632335058306?e=1674086400&v=beta&t=EATLsHpyYCxeJPdyx4D5ryqqiMCwHtc0adexRN6bwoU">
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="col-md-6 about-tools">
+        <p class="text-center">Her er nogle værktøjer jeg benytter</p>
+        <div class="col-xs-6">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="col-xs-6">
+          <ul>
+            <li>Git</li>
+            <li>Spring Framework</li>
+            <li>Thymeleaf</li>
+            <li>Java</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row break">
+        <div class="col-md-6 about-last">
+          <a href="#portfolio" id="to-portfolio" style="text-decoration: none"><p class="text-center">Se Mine Seneste Projekter<span class="glyphicon glyphicon-arrow-down"></span></p></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- End #About -->
+
+  <div id="portfolio" class="row cover">
+    <h2 class="text-center">Portefølje</h2>
+    <div class="container">
+      <div class="row portfolio-projects"> <!-- Two project row-->
+        <div class="col-lg-6"> <!--1st side project -->
+          <div class="row">
+            <div class="col-sm-5 text-center">
+              <h4 class="portfolio-projects--title">Medarbejder Portal - Bilabonnement</h4>
+              <p class="portfolio-projects--desc">Intern system til <a class="mail-anchor" target="_blank" href="https://bilabonnement.dk/">Bilabonnement.dk</a></p>
+              <p class="portfolio-projects--desc">Værktøjer brugt:
+                Javascript, Bootstrap, Java</p>
+            </div>
+            <div class="col-sm-7 text-center">
+              <img class="portfolio-projects--image" src="../index2/images/medarbejder_portal_bilabonnementdk_tv.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6"> <!--2nd side project -->
+          <div class="row">
+            <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+              <h4 class="portfolio-projects--title">Task Timer</h4>
+              <p class="portfolio-projects--desc">A Pomodoro clock timer with a task list integration</p>
+              <p class="portfolio-projects--desc">Uses: Javascript, JQuery, Bootstrap</p>
+              <a class="btn btn-rounded portfolio-projects--btn" href="https://sonorangirl.github.io/Task-Timer/" role="button">View Project</a>
+            </div>
+            <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+              <img class="img-rounded portfolio-projects--image" src="https://sonorangirl.github.io/img/slice-task-timer.png">
+            </div>
+          </div>
+        </div>
+      </div><!--end Two project row-->
+
+      <div class="row portfolio-projects"> <!-- Opposite Two project row-->
+        <div class="col-lg-6"> <!--1st side project -->
+          <div class="row">
+            <div class="col-sm-5 text-center">
+              <h4 class="portfolio-projects--title">Whats the Weather</h4>
+              <p class="portfolio-projects--desc">A weather app to check current weather conditions.</p>
+              <p class="portfolio-projects--desc">Uses: Javascript, Jquery, APIs</p>
+              <a class="btn btn-rounded portfolio-projects--btn" href="https://sonorangirl.github.io/Weather/" role="button">View Project</a>
+            </div>
+            <div class="col-sm-7 text-center">
+              <img class="img-rounded portfolio-projects--image" src="https://sonorangirl.github.io/img/weather-slice.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6"> <!--2nd side project -->
+          <div class="row">
+            <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+              <h4 class="portfolio-projects--title">Simon Game</h4>
+              <p class="portfolio-projects--desc">A simple recreation of the 80s game Simon.</p>
+              <p class="portfolio-projects--desc">Uses: Javascript, Sass, JQuery</p>
+              <a class="btn btn-rounded portfolio-projects--btn" href="https://sonorangirl.github.io/Simon-Game/" role="button">View Project</a>
+            </div>
+            <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+              <img class="img-rounded portfolio-projects--image" src="https://sonorangirl.github.io/img/slice-simon.png">
+            </div>
+          </div>
+        </div>
+        <div class="row break">
+
+          <div class="col-xs-12 center-block text-center">
+            <a class="lead text-center" href="#contact" id="to-contact"><p>Kontakt Mig<span class="glyphicon glyphicon-arrow-down"></span></p></a>
+          </div>
+        </div>
+      </div><!--end Opposite Two project row-->
+    </div>
+  </div>
+</div><!-- End #Portfolio -->
+
+<div id="contact" class="row cover bottom">
+  <h2 class="text-center contact-header" style="margin: 1%">Kontakt Mig</h2>
+  <p class="text-center contact-email" style="margin: 2%">Kom i kontakt med mig på: <a class="mail-anchor" href="mailto:mohammadmurtada@outlook.dk">Mohammadmurtada@outlook.dk</a></p>
+  <div class="text-center contact-social-icons" style="margin: 1%;">
+    <p>Eller du kan finde mig på:</p>
+    <ul class="centered">
+      <a href="https://codepen.io/mojens/" target="_blank"><li><i class="fa fa-codepen"></i> CodePen</li></a>
+      <a href="https://linkedin.com/in/mohammad-adel-murtada" target="_blank"><li><i class="fa fa-linkedin-square"></i> LinkedIn</li></a>
+      <a href="https://github.com/Mojens" target="_blank"><li><i class="fa fa-github"></i> Github</li></a>
+    </ul>
+    </p>
+
+  </div><!-- End #Contact -->
+
+</div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script src="https://kit.fontawesome.com/22c314b6f9.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="../index2/javascript/index.js"></script>
+</body>
+</html>
