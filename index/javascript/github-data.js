@@ -7,7 +7,7 @@ function formatGitDate(date){
 }
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: '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'
 })
 
 async function showGitHubDate(repoName, elementId) {
