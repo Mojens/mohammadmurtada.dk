@@ -12,20 +12,21 @@ const octokit = new Octokit({
     auth: tokenInput.value
 })
 
-async function showGitHubDate(repoName, elementId) {
-    let dateWT = await octokit.request('GET /repos/{owner}/{repo}/commits/master', {
-        owner: 'Mojens',
-        repo: repoName
+async function showGitHubDate(ownerName,repoName, elementId,branchName) {
+    let dateWT = await octokit.request('GET /repos/{owner}/{repo}/commits/{branch}', {
+        owner: ownerName,
+        repo: repoName,
+        branch: branchName
     }).then((response) => {
         return response.data.commit.author.date;
     });
 
-    document.getElementById(elementId).innerHTML = '<b class="bold-date">last updated:</b>'+' ' + formatGitDate(dateWT)
+    document.getElementById(elementId).innerHTML = DOMPurify.sanitize('<b class="bold-date">last updated:</b>'+' ' + formatGitDate(dateWT));
 }
 
-showGitHubDate('mohammadmurtada.dk', 'github-date');
-showGitHubDate('javascript-exercises', 'github-date-1').then();
-showGitHubDate('WebClientAsynchronousCalls', 'github-date-2').then();
-showGitHubDate('start-code-bootstrap', 'github-date-3').then();
-showGitHubDate('Backend_Template', 'github-date-4').then();
+showGitHubDate('Mojens','mohammadmurtada.dk', 'github-date','master');
+showGitHubDate('Mojens','javascript-exercises', 'github-date-1','master').then();
+showGitHubDate('Mojens','WebClientAsynchronousCalls', 'github-date-2','master').then();
+showGitHubDate('Mojens','start-code-bootstrap', 'github-date-3','AzureBranch').then();
+showGitHubDate('Mojens','Backend_Template', 'github-date-4','master').then();
 
