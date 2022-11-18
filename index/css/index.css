@@ -34,6 +34,7 @@ html, body {
     width: 100%;
     height: 60px;
 }
+
 @media only screen and (min-width: 600px) {
     .footer {
         position: absolute;
@@ -57,37 +58,46 @@ html, body {
     display: flex;
     flex-direction: row;
 }
-.social-item{
+
+.social-item {
     transition: transform .2s;
 }
-.social-item:hover{
+
+.social-item:hover {
     transform: scale(1.5);
     color: grey;
 }
-.anchor-social-card-left{
-    float:left;
+
+.anchor-social-card-left {
+    float: left;
     margin-right: 5%;
 }
-.anchor-social-card-right{
-    float:right;
+
+.anchor-social-card-right {
+    float: right;
     margin-left: 5%;
 }
-.bold-date{
+
+.bold-date {
     font-size: small;
 }
-.p-header1{
+
+.p-header1 {
     font-size: large;
     font-weight: bold;
 }
-.github-date{
+
+.github-date {
     float: right;
     margin-top: -40px;
     margin-right: -30px;
 }
+
 /* Arrow */
 body {
     background: gray;
 }
+
 .button-up,
 .button-down {
     position: relative;
@@ -120,6 +130,7 @@ body {
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
 }
+
 .button-up::after {
     top: 20px;
     transform: rotate(45deg);
@@ -131,7 +142,7 @@ body {
 }
 
 
-.long-arrow-right{
+.long-arrow-right {
     display: block;
     margin: 10px auto;
     width: 25px;
@@ -140,10 +151,11 @@ body {
     border-left: 2px solid #000;
 }
 
-.long-arrow-right{
+.long-arrow-right {
     transform: rotate(135deg);
 }
-.long-arrow-right::after{
+
+.long-arrow-right::after {
     content: "";
     display: block;
     width: 2px;
@@ -153,16 +165,45 @@ body {
     left: 0;
     top: 0;
 }
+
 /* Arrow */
-.portfolio-link{
+.portfolio-link {
     float: left;
 }
-.front-page-header{
+
+.front-page-header {
     margin-top: 35%;
 
 }
+
 @media only screen and (min-width: 600px) {
     .front-page-header {
         margin-top: 3%;
     }
+}
+
+.hoverable {
+    position: center;
+    float: left;
+    margin-left: -13%;
+    margin-top: -14%;
+}
+
+.hoverable > .hoverable__tooltip {
+    display: none;
+}
+
+.hoverable:hover > .hoverable__tooltip {
+    display: inline;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background: white;
+    color: black;
+    font-size: medium;
+    border: 1px solid black;
+}
+
+.small_text {
+    font-size: small;
 }

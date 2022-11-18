@@ -1,6 +1,6 @@
 import {Octokit} from "https://cdn.skypack.dev/@octokit/core";
 
-function formatGitDate(date){
+function formatGitDate(date) {
     let dateWOT = date.split('T');
     let dateWOTSplitted = dateWOT[0].split('-');
     return dateWOTSplitted[2] + '-' + dateWOTSplitted[1] + '-' + dateWOTSplitted[0];
@@ -12,7 +12,7 @@ const octokit = new Octokit({
     auth: tokenInput.value
 })
 
-async function showGitHubDate(ownerName,repoName, elementId,branchName) {
+async function showGitHubDate(ownerName, repoName, elementId, branchName) {
     let dateWT = await octokit.request('GET /repos/{owner}/{repo}/commits/{branch}', {
         owner: ownerName,
         repo: repoName,
@@ -21,12 +21,13 @@ async function showGitHubDate(ownerName,repoName, elementId,branchName) {
         return response.data.commit.author.date;
     });
 
-    document.getElementById(elementId).innerHTML = DOMPurify.sanitize('<b class="bold-date">last updated:</b>'+' ' + formatGitDate(dateWT));
+    document.getElementById(elementId).innerHTML = DOMPurify.sanitize('<b class="bold-date">last updated:</b>' + ' ' + formatGitDate(dateWT));
 }
 
-showGitHubDate('Mojens','mohammadmurtada.dk', 'github-date','master');
-showGitHubDate('Mojens','javascript-exercises', 'github-date-1','master').then();
-showGitHubDate('Mojens','WebClientAsynchronousCalls', 'github-date-2','master').then();
-showGitHubDate('Mojens','start-code-bootstrap', 'github-date-3','AzureBranch').then();
-showGitHubDate('Mojens','Backend_Template', 'github-date-4','master').then();
+showGitHubDate('Mojens', 'mohammadmurtada.dk', 'github-date', 'master');
+showGitHubDate('Mojens', 'javascript-exercises', 'github-date-1', 'master').then();
+showGitHubDate('Mojens', 'WebClientAsynchronousCalls', 'github-date-2', 'master').then();
+showGitHubDate('Mojens', 'start-code-bootstrap', 'github-date-3', 'AzureBranch').then();
+showGitHubDate('Mojens', 'start-code-bootstrap', 'github-hover-text1', 'master').then();
+showGitHubDate('Mojens', 'Backend_Template', 'github-date-4', 'master').then();
 
