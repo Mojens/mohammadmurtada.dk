@@ -22,6 +22,7 @@
 .grid-row .grid-item:hover {
     filter: contrast(1);
 }
+
 .grid-row .grid-item {
     display: flex;
     cursor: pointer;

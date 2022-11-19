@@ -15,6 +15,7 @@ html, body {
     transform: scale(1.1);
 }
 
+
 .social-list {
     list-style-type: none;
 }
@@ -68,6 +69,7 @@ html, body {
     color: grey;
 }
 
+
 .anchor-social-card-left {
     float: left;
     margin-right: 5%;
@@ -114,9 +116,11 @@ body {
     transform: translate3d(0, 10px, 0);
 }
 
+
 .button-up:hover {
     transform: translate3d(0, -10px, 0);
 }
+
 
 .button-up::after,
 .button-down::after {
@@ -189,6 +193,9 @@ body {
     margin-top: -14%;
 }
 
+.hoverable__tooltip{
+    display: none;
+}
 .hoverable > .hoverable__tooltip {
     display: none;
 }
@@ -201,9 +208,18 @@ body {
     background: white;
     color: black;
     font-size: medium;
+    padding: 10px;
     border: 1px solid black;
 }
 
 .small_text {
     font-size: small;
+}
+@media only screen and (min-width: 600px) {
+    #close-hover-btn{
+        display: none;
+    }
+}
+#close-hover-btn{
+    float: right;
 }

@@ -9,10 +9,12 @@
     box-shadow: 0 0 20px rgba(31, 30, 30, 0.2);
     transform: scale(1.1);
 }
-.hover-animation-WBorder:hover {
+
+.hover-animation-WBorder:hover{
     box-shadow: 0 0 20px rgba(31, 30, 30, 0.2);
     transform: scale(1.1);
 }
+
 .hover-zoom{
     transition: transform .6s;
 }

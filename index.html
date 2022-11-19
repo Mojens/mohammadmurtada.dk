@@ -76,10 +76,11 @@
                 </div>
             </div>
             <div class="grid-item">
-                <div class="slide_card hover-animation">
+                <div class="slide_card hover-animation" id="card-w-hover-info">
                     <div class="hoverable">
-                        <span class="hoverable__main"><i class="fa fa-info-circle"></i></span>
-                        <span class="hoverable__tooltip">
+                        <span class="hoverable__main"><i class="fa fa-info-circle" id="github-hover-info1"></i></span>
+                        <span class="hoverable__tooltip" id="github-hover-tooltip1">
+                            <i class="fa fa-times" id="close-hover-btn" style="float: right"></i>
                         <p id="github-hover-text1"></p>
                         <p class="small_text">(master branch)</p>
                     </span>
@@ -104,7 +105,7 @@
             </div>
 
             <div class="grid-item">
-                <div class="slide_card hover-animation">
+                <div class="slide_card hover-animation" id="testclick">
                     <div>
                         <p class="github-date" id="github-date-4"><b></b></p>
                     </div>
@@ -145,6 +146,7 @@
 </div>
 </div>
 <!-- Container End -->
+<script src="./index/javascript/onclickFunctions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
 <script src="./index/javascript/github-data.js" type="module"></script>
 <script src="https://kit.fontawesome.com/22c314b6f9.js" crossorigin="anonymous"></script>
