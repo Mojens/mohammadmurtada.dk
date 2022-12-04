@@ -1,10 +1,5 @@
 import {Octokit} from "https://cdn.skypack.dev/@octokit/core";
-
-function formatGitDate(date) {
-    let dateWOT = date.split('T');
-    let dateWOTSplitted = dateWOT[0].split('-');
-    return dateWOTSplitted[2] + '-' + dateWOTSplitted[1] + '-' + dateWOTSplitted[0];
-}
+import { localDateTimeToDate } from "./customDateFormatter.js";
 
 let tokenInput = document.getElementById('api-token-input');
 
@@ -21,7 +16,7 @@ async function showGitHubDate(ownerName, repoName, elementId, branchName) {
         return response.data.commit.author.date;
     });
 
-    document.getElementById(elementId).innerHTML = DOMPurify.sanitize('<b class="bold-date">last updated:</b>' + ' ' + formatGitDate(dateWT));
+    document.getElementById(elementId).innerHTML = DOMPurify.sanitize('<b class="bold-date">last updated:</b>' + ' ' + localDateTimeToDate(dateWT));
 }
 
 showGitHubDate('Mojens', 'mohammadmurtada.dk', 'github-date', 'master');
@@ -30,4 +25,8 @@ showGitHubDate('Mojens', 'WebClientAsynchronousCalls', 'github-date-2', 'master'
 showGitHubDate('Mojens', 'start-code-bootstrap', 'github-date-3', 'AzureBranch').then();
 showGitHubDate('Mojens', 'start-code-bootstrap', 'github-hover-text1', 'master').then();
 showGitHubDate('Mojens', 'Backend_Template', 'github-date-4', 'master').then();
+showGitHubDate('Forza-Grasp', 'Fleet-management-Frontend', 'github-date-5', 'production').then();
+showGitHubDate('Forza-Grasp', 'Fleet-management-Frontend', 'github-hover-text2', 'main').then();
+showGitHubDate('Forza-Grasp', 'Fleet-management-Backend', 'github-date-6', 'production').then();
+showGitHubDate('Forza-Grasp', 'Fleet-management-Backend', 'github-hover-text3', 'master').then();
 
